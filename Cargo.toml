@@ -1,4 +1,8 @@
 [workspace]
 members = [
-    "crates/*",
+    "crates/axum-server",
+    "crates/db",
+    "crates/ui-components",
+    "crates/asset-pipeline",
+    "crates/grpc-api",
 ]

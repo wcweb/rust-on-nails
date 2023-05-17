@@ -1,0 +1,13 @@
+[package]
+name = "assets"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[build-dependencies]
+ructe = { version = "0.16.1", features = ["sass", "mime03"] }
+
+[dependencies]
+# Used by ructe for image mime type detection
+mime = "0.3.0"
+cornucopia_async = "0.4.0"

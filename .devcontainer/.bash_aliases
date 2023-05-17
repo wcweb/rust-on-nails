@@ -18,3 +18,6 @@ alias nrs='npm run start'
 # Database
 alias dbmate='dbmate --no-dump-schema --migrations-dir /workspace/crates/db/migrations'
 alias db='psql $DATABASE_URL'
+
+
+export LC_ALL=C
