@@ -1,0 +1,30 @@
+[package]
+name = "axum-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dev-dependencies]
+# WebDriver Library for UI testing.
+thirtyfour = { version = "0", default-features = false, features = [ "reqwest-rustls-tls", "tokio-runtime" ] }
+
+[dependencies]
+axum = "0.6.18"
+db = { version = "0.1.0", path = "../db" }
+tokio = { version = "1.28.1", default-features = false, features = ["macros", "fs", "rt-multi-thread"] }
+ui-components = { version = "0.1.0", path = "../ui-components" }
+assets = { version = "0.1.0", path = "../asset-pipeline" }
+grpc_api = { version = "0.1.0", path = "../grpc-api" }
+
+futures = "0.3"
+hyper = { version = "0.14", features = ["full"] }
+prost = "0.11"
+
+tonic = { version = "0.9" }
+tonic-reflection = "0.9"
+tower = { version = "0.4", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tonic-web = "0.9.2"
+lettre = "0.10.4"
+openssl = { version = "0.10.52", features = ["vendored"] }
